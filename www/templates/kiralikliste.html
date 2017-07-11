@@ -1,0 +1,13 @@
+
+<ion-view view-title="Kiralık Araç Listesi">
+<ion-content has-subheader>
+<ion-list>
+<ion-item ng-repeat="item in kiralikaraclist" ng-click="AracSil(item)">
+  {{item.marka}}    {{item.tur}}   {{item.yil}}
+</ion-item>
+
+</ion-list>
+
+</ion-content>
+</ion-view>
+

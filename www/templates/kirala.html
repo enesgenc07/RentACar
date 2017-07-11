@@ -1,0 +1,65 @@
+<ion-view view-title="Kiralık Araç Listesi">
+
+
+  <ion-content>
+    <ion-list>
+
+<!--
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Arac Türü
+        </div>
+        <select ng-model="aracListele.Turvalue"  >
+
+
+          <option ng-repeat="item in turList" > {{item}}  </option>
+
+        </select></label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Arac Markası
+        </div>
+        <select ng-model="aracListele.Markavalue"  >
+
+
+          <option ng-repeat="item in markaList"> {{item.marka}}  </option>
+
+        </select></label>
+
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Araç  Yılı
+        </div>
+        <select ng-model="aracListele.Yilvalue">
+
+          <option ng-repeat="item in yilList"> {{item}}  </option>
+
+        </select></label>
+
+
+      <label class="item">
+        <button class="button button-block button-positive" ng-click="Ara()">Ara</button>
+      </label>
+-->
+
+
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" ng-model="filtrele" placeholder="Search" >
+        </label>
+      </div>
+
+
+
+      <ion-item ng-repeat="item in kiraliklist | filter : filtrele" ng-click="sec(item)" >
+        Markası: {{item.marka}} , Modeli : {{item.yil}}  Türü : {{item.tur}}
+
+</ion-item>
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

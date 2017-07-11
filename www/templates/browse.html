@@ -1,0 +1,28 @@
+<ion-view view-title="Arac Ekleme">
+
+
+  <ion-content>
+
+    <form ng-submit="Tamamla()">
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Marka</span>
+        <input type="text" ng-model="arac.marka">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Yil</span>
+        <input type="text" ng-model="arac.yil">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Tür</span>
+        <input type="text" ng-model="arac.tur">
+      </label>
+      <label class="item">
+        <button class="button button-block button-positive" type="submit">Tamamla</button>
+      </label>
+
+
+    </div>
+      </form>
+  </ion-content>
+</ion-view>
